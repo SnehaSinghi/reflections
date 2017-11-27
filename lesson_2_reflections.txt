@@ -1,0 +1,11 @@
+What happens when you initialize a repository? Why do you need to do it?
+It becomes a part of git repositry and now we can use it to keep track of any changes which we will make in the folder.
+Command used: git init
+
+Staging area: git add file_name or git add . 
+Accidentally added: git reset file_name
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+Staging area is a place where we keep the files to be tracked but havent strted tracking yet. Working directory is the directory we are currently working on which can comprise of various files but they may be tracked or untracked. Git repositry consists of directories which has files which are tracked. Staging area adds one level of protection before we directly commit our files
+
+ 
