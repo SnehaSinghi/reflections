@@ -8,4 +8,30 @@ Accidentally added: git reset file_name
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 Staging area is a place where we keep the files to be tracked but havent strted tracking yet. Working directory is the directory we are currently working on which can comprise of various files but they may be tracked or untracked. Git repositry consists of directories which has files which are tracked. Staging area adds one level of protection before we directly commit our files
 
- 
+Commit: git commit git status git log
+git diff with no arguments compares copies of staging area and working directory
+git diff --staged compares copies of staging area and repositry
+git reset --hard discards any changes in the working directory or the staging area
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+By using git diff and checking the difference between the copy of staging area and working directory
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+If we are introducing an experimental change or adding a new feature to our project, Branching will be very useful as it wont interfere with our already running master branch and we can merge it with the master branch as and when required.
+
+How do the diagrams help you visualize the branch structure?
+They help us in finding out which commits are reachablle and which are unreachable. They also help us in knowing the tips of various branches and which commit can be reached throught the commit of which branch.
+
+git gc: Garbage collection
+git branch: Shows the current branch
+git branch branch_name: Creates a new branch
+git show commit_id: Run git diff between the commit and its parent
+git branch -d coins (Deletes the branch i.e. delete the lavel(Not the commits))
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Incorporating new feature or fixing a bug
+To have a better idea of commits being merged and finding out the tip of master branch
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Automatic merging will save a lot of manpower and time whereas manual merging can be tedious.
